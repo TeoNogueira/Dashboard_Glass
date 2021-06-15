@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
 * {
 
     padding: 0;
@@ -226,10 +227,91 @@ margin-bottom: 0px;
 }
 
 
-.container-body .main-body .tittle .greeeting {
+.container-body .main-body .tittle .greeting {
 
-text-transform: capitalize;
-font-weight: 700;
-font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+
+.container-body .main-body .tittle h2 {
+
+
+font-size: 25px;
+font-weight: normal;
 
 }
+
+.container-body .main-body .cards {
+
+display: grid;
+grid-template-rows: 180px 140px;
+grid-gap: 20px;
+padding: 20px; 
+
+}
+
+.container-body .main-body .cards .row-1 {
+display: grid;
+grid-template-columns: 30% 40% auto;
+grid-gap: 20px;
+
+}
+
+
+.container-body .main-body .cards .row-2 {
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+    
+
+}
+
+.container-body .main-body .cards .row .col {
+
+background: rgba(255, 255, 255,.5);
+border-radius: 15px;
+
+}
+
+.container-body .main-body .cards .row .col .cardtittle {
+
+font-size: 16px;
+padding: 20px;
+text-transform: capitalize;
+text-align: center;
+
+}
+
+.balance-card {
+
+position: relative;
+
+}
+
+.balance-card h2 {
+
+font-size: 28px;
+padding: 10px 20px;
+
+}
+
+.balance-card span {
+
+font-size: 16px;
+font-weight: bold;
+padding: 20px;
+color: #33cc33;
+
+}
+
+
+.balance-card img {
+
+    position: absolute;
+    left: 13em;
+    top: 5em;
+}
+
