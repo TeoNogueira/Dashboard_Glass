@@ -23,16 +23,73 @@ align-items: center;
 min-height: 100vh;
 background: linear-gradient(-30deg, #33ccff, #81d5ff, #ffccff, #81d5ff);
 
-
 }
+
+
+body:before {
+
+    content: '';
+    position: absolute;
+    left: 8%;
+    bottom: 2%;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, .5);
+    animation: zigzag1 7s linear infinite;
+    filter: blur(5px);
+    }
+
+    @keyframes zigzag1 {
+    0%, 100% {
+
+        transform: translateX(60px);
+
+    }
+      
+    50% {
+
+        transform: translateX(290px);
+    }
+
+
+    }
+
+    body:after {
+
+        content: '';
+        position: absolute;
+        left: 92%;
+        top: 12%;
+        width: 80px;
+        height: 80px;
+        background: rgba(255, 255, 255, .5);
+        animation: zigzag2 9s linear infinite;
+        z-index: -1;
+        filter: blur(5px);
+        }
+
+        @keyframes zigzag2 {
+        0%, 100% {
+
+          transform: translateY(60px);
+
+        }
+          50% {
+              transform: translateY(320px);
+          }
+         
+        }
 
 .container {
 
 width: 90%;
 height: 85vh;
-background: rgba(255, 255, 255,.4);    
+background: rgba(255, 255, 255,.4);
+
 
 }
+
+
 .container .navbar {
 
     display: flex;
@@ -41,10 +98,12 @@ background: rgba(255, 255, 255,.4);
     padding: 8px 25px;
 }
 
+
 .container .navbar .logo {
 
     display: flex;
     align-items: center;
+
 }
 
 .container .navbar .logo .logoname {
@@ -54,6 +113,23 @@ background: rgba(255, 255, 255,.4);
     margin-left: 5em;
 
 }
+
+
+.container .navbar .logo img {
+
+animation: rotate 8s linear infinite;
+position: absolute;
+
+}
+
+@keyframes rotate {
+
+    from {
+
+        transform: rotate(-360deg);
+    }
+}
+
 
 .container .navbar .searchbox {
 
@@ -68,6 +144,7 @@ outline: none;
 border-radius: 30px;
 transition: .3s;
 }
+
 
 .container .navbar .searchbox input:focus {
     padding: 8px 150px 8px 20px;
@@ -98,7 +175,6 @@ border-radius: 6px;
 position: relative;
 right: 4em;
 
-
 }
 
 
@@ -111,7 +187,6 @@ right: 4em;
 
 
 
-
 .container .navbar .navitem .icons ul li {
 
 
@@ -121,6 +196,23 @@ right: 4em;
     font-size: 16px;
     color: #33cc33;
 
+}
+
+.container .navbar .navitem .icons ul li .fa {
+
+padding: 5px;
+color: #fff;
+background: #000;
+border-radius: 50%;
+transition: .3s;
+
+}
+
+.container .navbar .navitem .icons ul li .fa:hover {
+
+transform: scale(1.2) rotate(360deg);
+background: transparent;
+color: #33cc33;
 }
 
 
@@ -186,6 +278,21 @@ margin: 10px 0;
 
 }
 
+.container-body .sidebar ul li:hover {
+   
+    color: #fff;
+    background: #5d5da7;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+.container-body .sidebar ul li a:hover {
+
+    color: #fff;
+}
+
+
 .container-body .sidebar ul li a {
 
 color: #000;
@@ -221,7 +328,7 @@ color: #fff;
 .container-body .main-body .tittle {
 
 padding: 15px;
-margin: 20px;
+/* margin: 20px; */
 margin-bottom: 0px;
 
 }
@@ -252,6 +359,7 @@ padding: 20px;
 
 }
 
+
 .container-body .main-body .cards .row-1 {
 display: grid;
 grid-template-columns: 30% 40% auto;
@@ -266,8 +374,8 @@ grid-gap: 20px;
     grid-template-columns: repeat(4, auto);
     grid-gap: 20px;
     
-
 }
+
 
 .container-body .main-body .cards .row .col {
 
@@ -275,6 +383,7 @@ background: rgba(255, 255, 255,.5);
 border-radius: 15px;
 
 }
+
 
 .container-body .main-body .cards .row .col .cardtittle {
 
@@ -315,6 +424,7 @@ color: #33cc33;
     top: 5em;
 }
 
+
 .debit-card {
 
 position: relative;
@@ -325,6 +435,7 @@ background: #33ccff;
 color: #fff;
 
 }
+
 
 .debit-card .cardnumber {
 
@@ -337,6 +448,7 @@ text-align: center;
 
 }
 
+
 .debit-card .cardholder {
 
 font-size: 18px;
@@ -346,6 +458,7 @@ font-weight: normal;
 
 }
 
+
 .col .t-i, .p-i, .u-i, .i-s {
 
 padding: 20px 5px 20px 20px;
@@ -354,13 +467,55 @@ font-size: 25px;
 
 } 
 
+
 .col .status {
 
 font-size: 18px;
 padding: 6px 20px;
 border-radius: 6px;
-color: rgb(204, 65, 197);
+color: #fff;
 position: relative;
 bottom: 3px;
 
 }
+
+
+.total-invoice .status {
+
+font-weight: 700;
+color: #339933;
+font-size: 16px;
+padding-left: 5px;
+
+}
+
+
+.paid-invoice .status {
+
+background: #3acf4e;
+
+}
+
+
+.unpaid-invoice .status {
+
+background: #ff0066;
+
+}
+
+.invoice-sent .status {
+
+background: #d38724;
+
+}
+
+
+/* latest activity */
+
+.col .latest-activity img {
+
+    position: absolute;
+    transform: translateX(150%);
+
+}
+
