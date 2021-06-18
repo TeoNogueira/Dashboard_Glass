@@ -1,6 +1,6 @@
 <div align="center" id="top">
   <h3>Landing Page</h3>
-  <img height="420" src="https://github.com/TeoNogueira/Landing_Page_Responsive/blob/master/assets/images/html_css_boostrap_responsive.gif">
+  <img height="420" src="https://github.com/TeoNogueira/Dashboard_Glass/blob/master/assets/gif/dashboardGif.gif">
 
   &#xa0;
 
@@ -28,7 +28,7 @@ As principais ferramentas usadas:
   <img width="30" title="css" alt="css" src="https://github.com/TeoNogueira/Landing_Page_Responsive/blob/master/assets/icons/css3.jpg">
 </a> &#xa0; &#xa0;
 
-<a href="https://github.com/TeoNogueira/Dashboard_Glass/blob/master/assets/gif/dashboardGif.gif">
+<a href="">
   <img width="30" title="html5" alt="html5" src="">
 </a> &#xa0; &#xa0;
 
