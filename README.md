@@ -29,7 +29,7 @@ As principais ferramentas usadas:
 </a> &#xa0; &#xa0;
 
 <a href="">
-  <img width="30" title="html5" alt="html5" src="">
+  <img width="30" title="html5" alt="html5" src="https://logodownload.org/wp-content/uploads/2016/10/html5-logo.png">
 </a> &#xa0; &#xa0;
 
 ## 📚 Content
