@@ -1,5 +1,5 @@
 <div align="center" id="top">
-  <h3>Landing Page</h3>
+  <h3>Dashboard</h3>
   <img height="420" src="https://github.com/TeoNogueira/Dashboard_Glass/blob/master/assets/gif/dashboardGif.gif">
 
   &#xa0;
